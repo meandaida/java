@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ethioCinima</title>
+    <style>#head{color: blue;border: 2px solid greenyellow;background-color: fuchsia;width: 500px}
+     #main{background-color: khaki;border: 1px solid black;height: 400px;width: 500px;margin-top: 0;padding-top: 30px;
+     border-left-color:limegreen;
+     border-right-color: limegreen}
+    </style>
+</head>
+<body>
+    <center>
+      <div id="head">
+           <h1>Cinima Empire</h1>
+           <h3> forLoop Theater  Payment Details</h3>
+      </div>
+    <div id="main">
+    <script>  
+     // alert('Do you want to check price list?');    
+               var seats = 4;
+               var costPerTicket = 320;
+               var discount = 5;
+               var total = seats * costPerTicket;
+               cosnt  = 100;
+               var discountedCost;
+               totalCost=0;
+               document.write('Acutal cost per ticket:Rs.'+ costPerTicket+'<br><br>');
+      for(x = 1;x <= seats;x++){
+          discountedCost = costPerTicket-((discount/100)*costPerTicket);
+          //document.write('price :'+ discountedCost);
+          document.write('Ticket cost for customer '+ x +'  : Rs.: '+ discountedCost +' with discount of '+ discount +'%'+'<br><br>');
+          totalCost = totalCost + discountedCost; 
+          discount = discount + 2;
+            }
+         document.write('Actual price for  '+  seats + '  tickets would be Rs.  :'+ total+'<br><br>');
+         document.write('Amount Payable would be : '+ totalCost);
+     </script>
+     </div>
+    </center>
+</body>
+</html>   

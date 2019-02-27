@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #heading{width: 500px;color:black;text-align:center;border: 2px solid black;background-color: aqua}
+        #cont{ width:500px;
+                    height:400px;
+                    margin:20px,10px;
+                    padding:10px,10px;
+                    border:2px solid black;
+                    background-color:#eee;
+                    padding-top: 50px}
+     </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <h2>Booking Summary</h2>
+        </div>
+          <div id="cont">
+             <script>
+               var seats = 3;
+               var costPerTicket = 320;
+               var discount = 10;
+               var total = seats * costPerTicket;
+               cosnt  = 100;
+               var discountedCost;
+               totalCost=0;
+               document.write('Acutal cost per ticket:Rs.'+ costPerTicket+'<br><br>');
+               
+               for(i = 1;i<=seats;i++){
+                discountedCost = costPerTicket-((discount/ 100)*costPerTicket);
+               document.write(discount +' % off on ticket  '+ i  +'<br>');
+               totalCost = totalCost + discountedCost; 
+               discount = discount + 2;   
+                    }
+               document.write('<br>'+'Actual Amonut for'+seats+'ticket:Rs.'+total);
+               document.write('<br>'+'Amount Payable:Rs.'+totalCost);
+             </script>
+          </div>
+     </center> 
+</body>
+</html> 

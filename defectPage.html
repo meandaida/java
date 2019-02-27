@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+ <style>
+    table{
+      border-collapse: collapse;
+      width :800px;
+      height: 150px;
+     }
+   th {
+      border:1px solid black;
+      text-align: center;
+      background-color:blue;
+      color:white;
+      }
+   td {
+      border:1px solid black;
+      text-align: center;
+      }
+   tr:nth-child(even) {
+      background-color:#dddddd;
+      }
+   defectTracker{
+      border : 2px solid black;
+      height : 700px;
+      width  : 900px;
+     }
+   filterTracker{
+      border:2px solid black;
+      height :100px;
+      width  :800px;
+      }
+</style>
+</head>
+<body>
+<html>
+  <center>
+     <div className="defectTracker">
+          <h1 style="text-align:center">Defect Tracker</h1>
+               <a href="#">logout</a>
+               <a href="#">add defect</a>
+               <a href="file:///C:/Users/wondafrashmessele.w/Desktop/ReactFolder/GeneralDefectPages.html">view defects</a>
+
+         <div className="filterDetails">
+          <h3 style="text-align:center">Filter Details</h3>
+            <select name="Priority">
+               <option value="all">ALL</option>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+            </select><br><br>     
+            <select name="Category">
+               <option value="functional">Functional</option>
+               <option value="change request">Change Request</option>
+               <option value="ui">UI</option>
+            </select>
+         </div>
+        
+
+         <h3 style="font-size:bold;text-align:center">Defect Details</h3><br>
+         <h3 style="color:red;text-align:center">Search Results : 3</h3>
+         <table>
+           <tr>
+                <th>Defect Category</th>
+                <th>Description</th>
+                <th>Priority</th>
+                <th>Status</th>
+                <th>Change Status</th>
+           </tr>
+           <tr>
+               <td>UI</td>
+               <td>Submit Button coming to the exttreme left.refer screen shout</td>
+               <td>2</td>
+               <td>Open</td>
+               <td>Close Defect</td>
+           </tr>
+           <tr>
+              <td>Functional</td>
+              <td>while submitting the form data,a confirmation popup should appear.Refer docu</td>
+              <td>1</td>
+              <td>Open</td>
+              <td>Close Defect</td>
+           </tr>
+           <tr>
+             <td>Change Request</td>
+             <td>Add remove user functionality</td>
+             <td>3</td>
+             <td>Closed</td>
+             <td>No action pending</td>
+          </tr>      
+         </table>
+     </div>
+    </center>
+ </body>    
+</html>
